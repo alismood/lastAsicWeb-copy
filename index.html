@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zhabaikhan Ali's studies, AI internship, skills, and future goals.">
+    <title>Ali's Portfolio</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="container">
+    <header class="d-flex flex-wrap justify-content-between align-items-center gap-3 py-3">
+        <a class="navbar-brand" href="#home">Ali's Portfolio</a>
+        <nav class="d-flex gap-3" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills & contact</a>
+            <a href="#progress">Progress</a>
+        </nav>
+        <div class="btn-group" role="group" aria-label="Color theme">
+            <button id="light-theme" class="btn btn-secondary active" type="button" aria-pressed="true">Light</button>
+            <button id="dark-theme" class="btn btn-secondary" type="button" aria-pressed="false">Dark</button>
+        </div>
+    </header>
+    <hr class="mt-0">
+
+    <main>
+        <section id="home" class="my-5">
+            <div class="row align-items-center g-4">
+                <div class="col-md-8">
+                    <p id="greeting">Hello, welcome!</p>
+                    <h1>Zhabaikhan Ali</h1>
+                    <p id="headline" class="lead">Computer Science student and aspiring AI engineer.</p>
+                    <p>Welcome to My Portfolio. I'm a Computer Science student at Astana IT University, group IT-2503, in Astana, Kazakhstan. Alongside university, I'm studying AI engineering through the Tech Orda program.</p>
+                    <a class="btn btn-primary" href="#about">More about me</a>
+                </div>
+                <aside class="col-md-4" aria-label="Profile summary">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="h4">My focus</h2>
+                            <p>AI engineering student through Tech Orda.</p>
+                            <p>Working on AI during my healthcare internship.</p>
+                            <p>Planning to study for a master's degree in Korea.</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <hr>
+
+        <section id="about" class="my-5">
+            <p>Part 2: Effects</p>
+            <h2 class="mb-4">About me</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Behind the screen</h3>
+                            <p>I'm interested in AI and software development. I'm also an intern at the Republic Center of Electronic Health Care of Kazakhstan, where I work on the AI part.</p>
+                            <div id="fun-facts">
+                                <p class="status">Currently learning jQuery!</p>
+                                <ul>
+                                    <li>I study AI engineering through Tech Orda.</li>
+                                    <li>I'm a Candidate for Master of Sports in judo.</li>
+                                    <li>I want to study for a master's degree in Korea.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button id="hide-facts" class="btn btn-secondary" type="button">Hide</button>
+                                <button id="show-facts" class="btn btn-secondary" type="button">Show</button>
+                                <button id="toggle-facts" class="btn btn-secondary" type="button">Toggle</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h4">My practice gallery</h3>
+                            <p>Two illustrations of what I'm working on.</p>
+                            <div class="row">
+                                <figure class="col-6">
+                                    <img class="gallery-image img-fluid" src="images/layout.svg" alt="Illustration of a web page layout" width="400" height="260">
+                                    <figcaption class="small">Building layouts</figcaption>
+                                </figure>
+                                <figure class="col-6">
+                                    <img class="gallery-image img-fluid" src="images/code.svg" alt="Illustration of a code editor" width="400" height="260">
+                                    <figcaption class="small">Adding interaction</figcaption>
+                                </figure>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button id="fade-in" class="btn btn-secondary" type="button">Fade In</button>
+                                <button id="fade-out" class="btn btn-secondary" type="button">Fade Out</button>
+                                <button id="fade-toggle" class="btn btn-secondary" type="button">Fade Toggle</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+                    <h3 class="h4">My plans and goals</h3>
+                    <div class="btn-group" role="group" aria-label="All information panels">
+                        <button id="open-panels" class="btn btn-secondary" type="button">Open All</button>
+                        <button id="close-panels" class="btn btn-secondary" type="button">Close All</button>
+                    </div>
+                </div>
+                <h4>
+                    <button class="panel-heading btn btn-secondary w-100 text-start" type="button" aria-expanded="false" aria-controls="goals-panel">My AI internship <span class="float-end" aria-hidden="true">+</span></button>
+                </h4>
+                <div id="goals-panel" class="panel-content collapse">
+                    <p>I'm doing an internship at the Republic Center of Electronic Health Care of Kazakhstan and working on the AI part. It is a chance to connect my AI studies with practical work in healthcare.</p>
+                </div>
+                <h4>
+                    <button class="panel-heading btn btn-secondary w-100 text-start" type="button" aria-expanded="false" aria-controls="practice-panel">My master's plans in Korea <span class="float-end" aria-hidden="true">+</span></button>
+                </h4>
+                <div id="practice-panel" class="panel-content collapse">
+                    <p>After my bachelor's degree, I want to study for a master's degree in Korea. For now, I'm building my skills through university, the Tech Orda program, and my internship.</p>
+                </div>
+                <h4>
+                    <button class="panel-heading btn btn-secondary w-100 text-start" type="button" aria-expanded="false" aria-controls="project-panel">My dream car <span class="float-end" aria-hidden="true">+</span></button>
+                </h4>
+                <div id="project-panel" class="panel-content collapse">
+                    <p>My dream is to buy a new Porsche 911 Turbo S in the future. It is a personal goal that keeps me motivated to learn and build my career.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section id="skills" class="my-5">
+            <p>Part 3: DOM manipulation</p>
+            <h2 class="mb-4">Skills and contact</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h4">My technical skills</h3>
+                            <ul id="skill-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>PostgreSQL</li>
+                                <li>Git</li>
+                            </ul>
+                            <label class="form-label" for="new-skill">New skill</label>
+                            <input id="new-skill" class="form-control" type="text" placeholder="For example, Bootstrap" maxlength="50">
+                            <div class="d-flex flex-wrap gap-2 my-3">
+                                <button id="add-skill" class="btn btn-secondary" type="button">Add Skill</button>
+                                <button id="prepend-skill" class="btn btn-secondary" type="button">Prepend Skill</button>
+                                <button id="remove-skill" class="btn btn-secondary" type="button">Remove Skill</button>
+                            </div>
+                            <p id="skill-message" role="status">Add to the end, add to the start, or remove the last skill.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a id="social-link" href="https://github.com/alismood" target="_blank" rel="noopener noreferrer">My GitHub &rarr;</a>
+                                <button id="change-link" class="btn btn-secondary" type="button">Change Link</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Say hello</h3>
+                            <p>Type your details and watch the preview update.</p>
+                            <form id="contact-form">
+                                <div class="mb-3">
+                                    <label class="form-label" for="visitor-name">Name</label>
+                                    <input id="visitor-name" class="form-control" type="text" placeholder="Your name" autocomplete="name">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="visitor-email">Email</label>
+                                    <input id="visitor-email" class="form-control" type="email" placeholder="you@example.com" autocomplete="email">
+                                </div>
+                            </form>
+                            <hr>
+                            <h4 class="h5">Live preview</h4>
+                            <p>Name: <span id="name-preview">Your name</span></p>
+                            <p>Email: <span id="email-preview">Your email</span></p>
+                            <p class="small">This is a local preview. Nothing is sent.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section id="progress" class="my-5">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <p>Part 4: Animations</p>
+                    <h2>My skill levels</h2>
+                    <p>These sample levels show the skills from my list in a different way.</p>
+                    <p><button id="animate-skills" class="btn btn-primary" type="button" aria-pressed="false">Animate My Skills</button></p>
+                    <p>Click again to bring the bars back to zero.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-between"><p>HTML</p><p>80%</p></div>
+                    <div id="html-progress" class="progress mb-3" role="progressbar" aria-label="HTML practice level" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="html-bar" class="progress-bar"></div>
+                    </div>
+                    <div class="d-flex justify-content-between"><p>CSS</p><p>65%</p></div>
+                    <div id="css-progress" class="progress mb-3" role="progressbar" aria-label="CSS practice level" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="css-bar" class="progress-bar"></div>
+                    </div>
+                    <div class="d-flex justify-content-between"><p>JavaScript</p><p>50%</p></div>
+                    <div id="js-progress" class="progress mb-3" role="progressbar" aria-label="JavaScript practice level" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="js-bar" class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+
+    <footer class="d-flex justify-content-between py-3">
+        <p>Zhabaikhan Ali / IT-2503</p>
+        <a href="#home">Back to top</a>
+    </footer>
+</body>
+</html>
